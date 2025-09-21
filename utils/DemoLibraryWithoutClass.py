@@ -8,3 +8,7 @@ def add_num(a, b):
 def sum_two():
     a, b = 1, 2
     return a + b
+
+def sum_three():
+    a, b, c = 1, 2, 3
+    return a + b + c
