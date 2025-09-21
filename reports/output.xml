@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.8 on win32)" generated="2025-09-20T18:31:51.369888" rpa="false" schemaversion="5">
+<suite id="s1" name="customeDemoLibrary" source="C:\Users\hp\PycharmProjects\PythonProject\testcases\customeDemoLibrary.robot">
+<test id="s1-t1" name="Demo Of Custome Library" line="6">
+<kw name="My Keyword" owner="DemoLibrary">
+<msg time="2025-09-20T18:31:51.387664" level="INFO">Class12345 initialized with ('jaypal', 'srushti') and {'srujan': 'kumbar'}</msg>
+<arg>jaypal</arg>
+<arg>srushti</arg>
+<arg>srujan=kumbar</arg>
+<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
+</test>
+<test id="s1-t2" name="Demo Of Custome Library Without Class" line="9">
+<kw name="Print Hello" owner="DemoLibraryWithoutClass">
+<msg time="2025-09-20T18:31:51.387664" level="INFO">Hello World</msg>
+<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
+</kw>
+<kw name="Add Num" owner="DemoLibraryWithoutClass">
+<msg time="2025-09-20T18:31:51.387664" level="INFO">${sum1} = 11</msg>
+<var>${sum1}</var>
+<arg>5</arg>
+<arg>6</arg>
+<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sum1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
+</kw>
+<kw name="Sum Two" owner="DemoLibraryWithoutClass">
+<msg time="2025-09-20T18:31:51.387664" level="INFO">${sum2} = 3</msg>
+<var>${sum2}</var>
+<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sum2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2025-09-20T18:31:51.369888" elapsed="0.017776"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="customeDemoLibrary" id="s1" pass="2" fail="0" skip="0">customeDemoLibrary</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
