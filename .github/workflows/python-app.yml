@@ -36,4 +36,6 @@ jobs:
         with:
           name: reports                # Name of the folder
           path:  D:\a\rfwebapiauto\rfwebapiauto\reports         # Path to test results
+      - name: Publish Test Summary Results
+        run: npx github-actions-ctrf D:\a\rfwebapiauto\rfwebapiauto\reports
          
