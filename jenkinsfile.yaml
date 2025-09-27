@@ -1,6 +1,12 @@
-agent: any
-stages:
-  -stage: "Run robot tests"
-   steps:
-      -echo "First scripted file"
-      -bat 'runtests.bat'
+pipeline{
+    agent any
+    stages {
+        stage('Hello'){
+            steps{
+                echo "Hello world"
+                echo "$env.workspace"
+                bat 'runtests.bat'
+            }
+         }
+    }
+  }
