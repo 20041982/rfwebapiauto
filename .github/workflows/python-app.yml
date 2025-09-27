@@ -1,7 +1,7 @@
 name: Robot Framework - Python
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "development" ]
   pull_request:
     branches: [ "master" ]
  
@@ -24,9 +24,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install robotframework
           pip install robotframework-seleniumlibrary
-   
+          pip install robotframework-browser
       - name: Test with RobotFramework
-        run: robot .  
+        run: robot testcases/appLoginKeywords.robot
          
       - name: Test Report Generation
         uses: actions/upload-artifact@v4
