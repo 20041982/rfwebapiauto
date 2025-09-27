@@ -1,55 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.8 on win32)" generated="2025-09-20T18:31:51.369888" rpa="false" schemaversion="5">
-<suite id="s1" name="customeDemoLibrary" source="C:\Users\hp\PycharmProjects\PythonProject\testcases\customeDemoLibrary.robot">
-<test id="s1-t1" name="Demo Of Custome Library" line="6">
-<kw name="My Keyword" owner="DemoLibrary">
-<msg time="2025-09-20T18:31:51.387664" level="INFO">Class12345 initialized with ('jaypal', 'srushti') and {'srujan': 'kumbar'}</msg>
-<arg>jaypal</arg>
-<arg>srushti</arg>
-<arg>srujan=kumbar</arg>
-<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
+<robot generator="Robot 7.3.2 (Python 3.12.8 on win32)" generated="2025-09-27T11:48:17.740887" rpa="false" schemaversion="5">
+<suite id="s1" name="testLoginFlow" source="C:\Users\hp\PycharmProjects\PythonProject\testcases\testLoginFlow.robot">
+<test id="s1-t1" name="Login and Verify Text on edge" line="19">
+<kw name="SignIn To Application" owner="appLoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-27T11:48:18.127295" level="INFO">Opening browser 'edge' to base url 'https://www.automationexercise.com/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>${browserType}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-27T11:48:18.127295" elapsed="8.261331"/>
 </kw>
-<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${elementToPresent}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-27T11:48:26.388626" elapsed="0.028568"/>
+</kw>
+<arg>${edgeBrowser}</arg>
+<status status="PASS" start="2025-09-27T11:48:18.127295" elapsed="8.289899"/>
+</kw>
+<kw name="Close Application" owner="appLoginKeywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-27T11:48:26.418305" elapsed="2.304827"/>
+</kw>
+<status status="PASS" start="2025-09-27T11:48:26.418305" elapsed="2.304827"/>
+</kw>
+<tag>edge</tag>
+<tag>lrg</tag>
+<status status="PASS" start="2025-09-27T11:48:18.127295" elapsed="10.595837"/>
 </test>
-<test id="s1-t2" name="Demo Of Custome Library Without Class" line="9">
-<kw name="Print Hello" owner="DemoLibraryWithoutClass">
-<msg time="2025-09-20T18:31:51.387664" level="INFO">Hello World</msg>
-<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
-</kw>
-<kw name="Add Num" owner="DemoLibraryWithoutClass">
-<msg time="2025-09-20T18:31:51.387664" level="INFO">${sum1} = 11</msg>
-<var>${sum1}</var>
-<arg>5</arg>
-<arg>6</arg>
-<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sum1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
-</kw>
-<kw name="Sum Two" owner="DemoLibraryWithoutClass">
-<msg time="2025-09-20T18:31:51.387664" level="INFO">${sum2} = 3</msg>
-<var>${sum2}</var>
-<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sum2}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2025-09-20T18:31:51.387664" elapsed="0.000000"/>
-</test>
-<status status="PASS" start="2025-09-20T18:31:51.369888" elapsed="0.017776"/>
+<status status="PASS" start="2025-09-27T11:48:17.740887" elapsed="10.982245"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">edge</stat>
+<stat pass="1" fail="0" skip="0">lrg</stat>
 </tag>
 <suite>
-<stat name="customeDemoLibrary" id="s1" pass="2" fail="0" skip="0">customeDemoLibrary</stat>
+<stat name="testLoginFlow" id="s1" pass="1" fail="0" skip="0">testLoginFlow</stat>
 </suite>
 </statistics>
 <errors>
