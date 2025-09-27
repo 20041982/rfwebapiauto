@@ -29,11 +29,11 @@ jobs:
       - name: Initialize Browser Library
         run: rfbrowser init
       - name: Test with RobotFramework
-        run: robot .
+        run: robot --outputdir D:\a\rfwebapiauto\rfwebapiauto\reports .
       - name: Test Report Generation
         uses: actions/upload-artifact@v4
         if: success() || failure()
         with:
           name: reports                # Name of the folder
-          path:  D:\a\rfwebapiauto\rfwebapiauto\*         # Path to test results
+          path:  D:\a\rfwebapiauto\rfwebapiauto\reports         # Path to test results
          
