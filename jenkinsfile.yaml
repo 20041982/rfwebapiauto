@@ -1,6 +1,6 @@
 agent: any
 stages:
-  - stage: Run robot tests
+  - stage: "Run robot tests"
     steps:
       - echo 'First scripted file'
       - bat 'runtests.bat'
