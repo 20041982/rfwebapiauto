@@ -25,6 +25,7 @@ jobs:
           pip install robotframework
           pip install robotframework-seleniumlibrary
           pip install robotframework-browser
+          pip install rfbrowser
       - name: Test with RobotFramework
         run: robot testcases/appLoginKeywords.robot
          
